@@ -8,43 +8,207 @@
 </head>
 <STyle>
 
-h2{
-    background-color:rgb(8, 50, 8);
-    font-size: 45px;
-    text-align: center;
-color: aliceblue;
 
-}
 
-body{
-    background-color: black;
-    background-image: url(imagnes/4k-tech-1eweq7h47kehxd7y.jpg);
-}
 
-form{
+    h1 {
+        font-size: 45px;
+        text-align: center;
+        color: aliceblue;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
-    background-color: aquamarine;
 
-}
+    }
+
+    div {
+        background-color: rgb(6, 36, 42);
+        box-shadow: 4px 4px 0px;
+
+
+    }
+
+    #lab1 {
+        color: aliceblue;
+        margin-left: 80px;
+        font-size: 30px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+    }
+
+    #lab2 {
+
+        color: aliceblue;
+        margin-left: 5px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    }
+
+    #lab3 {
+        color: aliceblue;
+        margin-left: 5px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    }
+
+    #inp1 {
+        width: 190px;
+        margin-bottom: 15px;
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+
+    #inp2 {
+
+        width: 190px;
+        margin-bottom: 15px;
+        margin-left: 5px;
+        margin-top: 10px;
+
+    }
+
+
+    body {
+        background-color: rgba(8, 30, 34, 0.899);
+
+    }
+
+
+    form {
+
+        background-color: rgb(4, 56, 37);
+        box-shadow: 8px 5px 0px;
+
+        width: 210px;
+        height: 280px;
+        color: rgb(0, 0, 0);
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+
+
+    }
+
+
+    button {
+
+        background-color: rgb(29, 54, 54);
+        border-radius: 6px;
+        box-shadow: 1px 4px 0px;
+        transition: transform 200ms ease-in-out;
+
+        
+
+
+    }
+
+    
+
+    #b1 {
+        width: 200px;
+        height: 30px;
+        border-radius: 6px;
+        margin-left: 5px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        
+
+
+
+    }
+
+   
+    #b2 {
+        margin-left: 5px;
+        margin-top: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        height: 30px;
+    }
+
+
+    
+
+
+    #a1 {
+        color: aliceblue;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-decoration: none;
+        
+
+    }
+
+    #a2 {
+        
+        text-align: center;
+        text-decoration: none;
+        color: aliceblue;
+        padding-right: 75px;
+        padding-left: 75px;
+        
+
+    }
+
+   
+
+    #a3 {
+        color: aliceblue;
+        text-decoration: none;
+        padding-right: 6px;
+        padding-left: 2px;
+
+    }
+
+
+    button:hover{
+        transform: scale(1.05);
+    }
+
+   #a1:hover{
+
+    color: aqua;
+    text-decoration-line: underline;
+
+
+   }
+
+
+
+
 </STyle>
+
 <body>
 
-    
-    <h2>Tela de Login</h2>
-    
+    <div>
+        <h1>GAMES KOM</h1>
+    </div>
+
+
+
     <form>
-        <label for="fname"> Usuario:</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="lname">Senha:</label><br>
-        <input type="password" id="lname" name="lname">
+
+
+        <label id="lab1"> login</label><br>
+
+        <label id="lab2" for="fname"> Usuario:</label>
+        <br>
+        <input id="inp1" type="text" id="fname" name="fname">
+        <br>
+        <label id="lab3" for="lname">Senha:</label>
+        <br>
+        <input id="inp2" type="password" id="lname" name="lname">
+
+
+
+
+        <p><button id="b1"><a id="a2" href="principal.html">Entrar</a></button> <br>
+
+            <button id="b2"><a id="a3" href="novo.html">
+                    Cadastro</a></button>
+
+            <a id="a1" href="esqueceu.html">Esqueceu a senha? </a>
+
     </form>
 
-    <p><button><a href="principal.html">Entrar</a></button>
-        <br>
-        <a href="novo.html">Novo Cadastro</a>
-
-        <a href="esqueceu.html">Esqueceu a senha? </a>
-        <br>
 
 </body>
 
