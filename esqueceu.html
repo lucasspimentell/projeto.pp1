@@ -1,28 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ESQUECEU SENHA</title>
+    <title>Recuperação de Senha</title>
+    <style>
+        /* Estilo básico do body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color:  rgba(8, 30, 34, 0.899);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Estilização da logo */
+        img {
+            margin-bottom: 20px;
+        }
+
+        /* Estilização do formulário */
+        form {
+            background-color:  rgb(4, 56, 37);
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #ffffff;
+        }
+
+        p {
+            text-align: left;
+            font-size: 14px;
+            color: #ffffff;
+        }
+
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        /* Estilização do botão de voltar */
+        .back-button {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .back-button img {
+            cursor: pointer;
+        }
+    </style>
 </head>
 
-
-
 <body>
-    <img src="img/sTAR - Copia2.png" alt="Logo" width="100">
-    <form action="login.html">
-        <input type="image" src="img/seta-removebg-preview.png" alt="Voltar" width="30" height="30">
 
-    <h2>Recuperar senha</h2>
+    <div class="back-button">
+        <a href="login.html">
+            <img src="https://cdn-icons-png.flaticon.com/512/66/66822.png" alt="Voltar" width="30" height="30">
+        </a>
+    </div>
+
+    <img src="https://files.oaiusercontent.com/file-WtjPIwZHkvmSmB4D5nY076L0?se=2024-10-12T13%3A56%3A37Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D2577c827-1c3e-4b8f-80bf-7c5e63a52576.webp&sig=i4awtL9yBTQl/vts/A1P2eYmNKpNG0C8U4M1yyn8B9M%3D" alt="Logo" width="100">
+
     <form action="./esqueceu.html" autocomplete="on">
-        <p>email:</p><input type="email">
+        <h2>Recuperar senha:</h2>
+        <p>E-mail:</p>
+        <input type="email" placeholder="Digite seu e-mail" required>
+        <button type="submit" onclick="alert('Link para elaboração de nova senha enviado pro seu e-mail.')">Enviar</button>
     </form>
-
-    <br>
-    <button type="button" onclick="alert('Senha enviada para o email informado ')"><a
-            href="./login.html">Enviar</a></button>
-    <br>
 
 </body>
 
