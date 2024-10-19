@@ -80,6 +80,7 @@ a   {
 }
 
 footer{
+    
     color:white;
     background-color: #333;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -87,6 +88,41 @@ footer{
 
 
 }
+
+/*aqui eu editei o h6, e os id texto1,2,3 referente ao footer / rodape da tela e coloquei uma margen na imagen */
+
+h6{
+   
+    margin: 20px;
+
+
+
+}
+
+#texto1,#texto2{
+
+    text-align: center;
+
+    display: inline-block;
+
+}
+
+#texto3{
+
+   text-align: left;
+    
+}
+
+img{
+    
+    margin: 17px;
+
+    
+}
+
+
+
+
 
 
 
