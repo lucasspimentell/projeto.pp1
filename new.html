@@ -145,7 +145,7 @@
         <img id = "im2"src="imagens/imagen_logo.jpeg" alt="logo" width="100">
         
 
-        <p>Nome:</p><input type="text">
+        <p>Nome:</p><input type="text" id = "nome">
         <p>Data de nascimento: </p>
         
             <label for="data"></label>
@@ -160,32 +160,136 @@
 
 
         <p>Marque seus gêneros de preferência:</p>
-        <input type="checkbox" name="Preferencia1" id="Preferencia1" value="Ação e aventura">
+        <input type="checkbox" name="Preferencia" id="Preferencia1" value="Ação e aventura">
         <label for="Preferencia1">Ação e aventura</label><br>
-        <input type="checkbox" name="Preferencia2" id="Preferencia2" value="RPG">
+        <input type="checkbox" name="Preferencia" id="Preferencia2" value="RPG">
         <label for="Preferencia2">RPG</label><br>
-        <input type="checkbox" name="Preferencia3" id="Preferencia3" value="Simulação">
+        <input type="checkbox" name="Preferencia" id="Preferencia3" value="Simulação">
         <label for="Preferencia3">Simulação</label><br>
-        <input type="checkbox" name="Preferencia4" id="Preferencia4" velue="Suspense">
+        <input type="checkbox" name="Preferencia" id="Preferencia4" velue="Suspense">
         <label for="Preferencia4">Suspense</label><br>
-        <input type="checkbox" name="Preferencia5" id="Preferencia5" value="Terror">
+        <input type="checkbox" name="Preferencia" id="Preferencia5" value="Terror">
         <label for="Preferencia5">Terror</label>
 
 
-        <p>E-mail:</p><input type="email">
-        <p>Senha:</p><input type="password">
-        <p>Confirmação de senha</p><input type="password">
+        <p>E-mail:</p><input type="email" id = "email">
+        <p>Senha:</p><input type="password" id = "senha">
+        <p>Confirmação de senha</p><input type="password" id = "confirmar">
         <br>
        
-        <button type="button" onclick="alert('Cadastro finalizado')"><a id = "a1"href="login.html">Enviar</a></button>
+        <button type="button" onclick="validar()"><a id = "a1">cadastrar</a></button>
 
         
-            <input id = "l1" type="reset" value="Limpar"></inputtype>
-        
-        
-           
-        
+            <input id = "l1" type="reset" value="Limpar"></inputtype> 
     </form>
+<script>
+
+    
+    function validar() {
+        // campo nome
+        var nome = document.getElementById("nome")
+            if (nome.value =="") {
+
+
+                alert("informe o nome");
+
+
+                nome.focus();
+                return false;
+            }
+
+            var nascimento = document.getElementById("nascimento")
+            if (nascimento.value =="") // se o valor (value) da variavel nascimento for vazio 
+            {
+
+
+                alert("informe a data de nascimento");
+
+               nascimento.focus(); // usado para focar no campo vazio
+
+                return false;
+            }
+
+            // campo escolha do sexo 
+            if ((document.getElementById("Feminino").checked == false)
+                &&
+                (document.getElementById("Masculino").checked == false)
+                ) {
+
+
+                alert("informe o sexo");
+
+
+                document.getElementById("Masculino").focus();
+                return false;
+            }
+            // campo escolha do genero 
+            var genero = document.getElementsByName("Preferencia");
+            var generoSelecionado = false;
+
+            for (var i = 0; i < genero.length; i++) {
+                if (genero[i].checked == true) {
+                    generoSelecionado = true;
+                }
+            }
+
+            if (generoSelecionado == false) {
+                alert("Informe o genero");
+                document.getElementById("Preferencia1").focus();
+                return false;
+            }
+
+
+            var emael = document.getElementById("email")
+            if (email.value =="") {
+
+
+                alert("informe o email");
+
+
+                email.focus();
+                return false;
+            }
+
+            var senha = document.getElementById("senha")
+            if (senha.value =="") {
+
+
+                alert("informe o senha");
+
+
+                senha.focus();
+                return false;
+            }
+
+            var  confirmar= document.getElementById("confirmar")
+            if (confirmar.value ==""){
+
+
+                alert("informe senha");
+
+
+                confirmar.focus();
+                return false;
+            }
+
+
+
+
+
+
+            var formulario = document.getElementById("f2");
+            formulario.submit();
+
+
+
+
+    }
+</script>
+
+
+
+
 </body>
 
 </html>

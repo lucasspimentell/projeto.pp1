@@ -184,7 +184,7 @@
 
 
 
-    <form>
+    <form id="login" action="main.html">
 
 
         <label id="lab1"> login</label><br>
@@ -200,7 +200,7 @@
 
 
 
-        <p><button id="b1"><a id="a2" href="main.html">Entrar</a></button> <br>
+        <p><button type = "button"   id="b1" onclick="validar()"><a id ="a2" >Entrar</a></button> <br>
 
             <button id="b2"><a id="a3" href="new.html">
                     Cadastro</a></button>
@@ -208,6 +208,55 @@
             <a id="a1" href="esqueceu.html">Esqueceu a senha? </a>
 
     </form>
+
+    <script>
+
+function validar() {
+
+ //validando usuario e senha 
+
+
+    var use = document.getElementById("inp1")
+            if (inp1.value =="") {
+
+
+                alert("informe o Usuario");
+
+
+                use.focus();
+                return false;
+            }
+
+
+
+
+
+
+
+    var senha = document.getElementById("inp2")
+            if (inp2.value =="") {
+
+
+                alert("informe o senha");
+
+
+                senha.focus();
+                return false;
+            }
+
+
+            
+            var login = document.getElementById("login");
+            login.submit();
+
+
+
+}
+
+
+
+
+    </script>
 
 
 </body>
